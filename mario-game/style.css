@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #5c94fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Press Start 2P', monospace, sans-serif;
+  overflow: hidden;
+}
+
+/* ── HUD ── */
+#hud {
+  display: flex;
+  gap: 40px;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #000;
+  letter-spacing: 1px;
+}
+
+/* ── CANVAS ── */
+#gameCanvas {
+  border: 4px solid #000;
+  display: block;
+  image-rendering: pixelated;
+}
+
+/* ── OVERLAY (menu / game over / win) ── */
+#overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: white;
+  text-shadow: 3px 3px #000;
+}
+
+#overlay h1 {
+  font-size: 32px;
+  color: #FFD700;
+}
+
+#overlay p {
+  font-size: 13px;
+  text-align: center;
+  line-height: 2;
+}
+
+#overlay button {
+  margin-top: 10px;
+  padding: 12px 28px;
+  font-size: 15px;
+  background: #e44;
+  color: white;
+  border: 4px solid #800;
+  border-radius: 6px;
+  cursor: pointer;
+  text-shadow: 1px 1px #000;
+  font-family: inherit;
+  letter-spacing: 1px;
+}
+
+#overlay button:hover {
+  background: #f66;
+}
